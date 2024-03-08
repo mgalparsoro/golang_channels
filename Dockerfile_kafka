@@ -1,0 +1,29 @@
+FROM openjdk:11.0.10-jre-buster
+
+ENV KAFKA_VERSION 2.7.0
+ENV SCALA_VERSION 2.13
+RUN mkdir /tmp/kafka && \
+  apt-get update && \
+  apt-get install -y curl
+
+RUN curl "https://archive.apache.org/dist/kafka/${KAFKA_VERSION}/kafka_${SCALA_VERSION}-${KAFKA_VERSION}.tgz" \
+  -o /tmp/kafka/kafka.tgz && \
+  mkdir /kafka && cd /kafka && \
+  tar -xvzf /tmp/kafka/kafka.tgz --strip 1
+
+COPY scripts/start-zookeeper  /usr/bin
+RUN chmod +x  /usr/bin/start-zookeeper
+
+COPY scripts/start-kafka  /usr/bin
+RUN chmod +x  /usr/bin/start-kafka
+
+COPY scripts/send  /usr/bin
+RUN chmod +x  /usr/bin/send
+
+COPY scripts/start-producer  /usr/bin
+RUN chmod +x  /usr/bin/start-producer
+
+COPY scripts/start-consumer  /usr/bin
+RUN chmod +x  /usr/bin/start-consumer
+
+CMD ["/bin/bash"]
