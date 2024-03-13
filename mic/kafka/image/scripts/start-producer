@@ -1,6 +1,0 @@
-#!/bin/bash -e
-
-while true; do
-  send "`date`: Producer says hello!!!"
-  sleep 5
-done
