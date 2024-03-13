@@ -1,0 +1,24 @@
+apiVersion: 3
+
+deleteDatasources:
+  - name: "PG12"
+    orgId: 1
+
+datasources:
+  - name: PG12
+    type: postgres
+    uid: 6AVK6as4z
+    url: mic-dashboards-db:5432
+    database: smartpm
+    user: postgres
+    default: true
+    secureJsonData:
+      password: 'yeawea77'
+    jsonData:
+      sslmode: 'disable'
+      maxOpenConns: 0
+      maxIdleConns: 2
+      connMaxLifetime: 14400
+      postgresVersion: 12
+      timescaledb: false
+

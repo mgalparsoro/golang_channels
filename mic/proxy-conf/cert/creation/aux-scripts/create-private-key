@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Check if command line argument is provided and exit if not
+if [ -z "$1" ]; then
+  echo "Usage: $0 <filename>"
+  exit 1
+fi
+
+openssl genpkey -algorithm RSA -out $1 -outform PEM -pkeyopt rsa_keygen_bits:2048
+
+# Check key was generated
+if [ $? -ne 0 ]; then
+  echo "Error: Failed to generate certificate private key"
+  exit 1
+fi
+
+echo "Private key generated successfully: $1"

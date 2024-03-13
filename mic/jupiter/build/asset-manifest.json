@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5879f1be.css",
+    "main.js": "/static/js/main.23dca45e.js",
+    "static/media/biemh-deteccion-personas.mp4": "/static/media/biemh-deteccion-personas.7969a5ffff0d8816fe08.mp4",
+    "static/media/login_wallpaper.jpg": "/static/media/login_wallpaper.03efe039d1b54c016578.jpg",
+    "static/media/mic-defecto.jpg": "/static/media/mic-defecto.ea5b8933ff5aaf47a9a3.jpg",
+    "static/media/measure.png": "/static/media/measure.4e015190e9cdc615e905.png",
+    "static/media/DashboardGrafanaV1.png": "/static/media/DashboardGrafanaV1.fb9f022775201c624512.png",
+    "static/media/sample.png": "/static/media/sample.ec69477dd788e1b6ad7e.png",
+    "static/media/CompassFakeImg.png": "/static/media/CompassFakeImg.5c4d577a16e33f87964d.png",
+    "static/media/clock.gif": "/static/media/clock.bc037d38fe291a3211e9.gif",
+    "static/media/Gears.gif": "/static/media/Gears.122f624637d15cbeaf78.gif",
+    "static/media/Manufacturing.png": "/static/media/Manufacturing.258b0100092eed071a28.png",
+    "static/media/Storage.png": "/static/media/Storage.5d8200d428c652caf6ae.png",
+    "static/media/Handler.png": "/static/media/Handler.24b8bd57a1699975996c.png",
+    "static/media/LogoGreenSmall.png": "/static/media/LogoGreenSmall.147633420daf3d4ca2d7.png",
+    "static/media/Logo.PNG": "/static/media/Logo.a4ec8b0884f724d7008e.PNG",
+    "static/media/Reset.svg": "/static/media/Reset.92c4cdf46e09e701b0c1744fea71afe7.svg",
+    "static/media/LogoSmartpm.PNG": "/static/media/LogoSmartpm.55beb759de1936e15a74.PNG",
+    "static/media/Start.svg": "/static/media/Start.c383cea8e890251c2209af48d5005347.svg",
+    "static/media/Stop.svg": "/static/media/Stop.4f1ff86afc92468c2a2c677865e78f60.svg",
+    "index.html": "/index.html",
+    "main.5879f1be.css.map": "/static/css/main.5879f1be.css.map",
+    "main.23dca45e.js.map": "/static/js/main.23dca45e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5879f1be.css",
+    "static/js/main.23dca45e.js"
+  ]
+}

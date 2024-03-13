@@ -1,0 +1,7 @@
+2024/02/20 10:22:01 [emerg] 1#1: host not found in upstream "mic-dashboards" in /etc/nginx/nginx.conf:66
+2024/02/20 10:22:02 [emerg] 1#1: host not found in upstream "mic-dashboards" in /etc/nginx/nginx.conf:66
+2024/02/20 10:22:02 [emerg] 1#1: host not found in upstream "mic-dashboards" in /etc/nginx/nginx.conf:66
+2024/02/20 10:22:03 [emerg] 1#1: host not found in upstream "mic-dashboards" in /etc/nginx/nginx.conf:66
+2024/02/20 10:22:04 [emerg] 1#1: host not found in upstream "mic-dashboards" in /etc/nginx/nginx.conf:66
+2024/02/20 10:22:06 [emerg] 1#1: host not found in upstream "mic-dashboards" in /etc/nginx/nginx.conf:66
+2024/02/20 10:22:10 [emerg] 1#1: host not found in upstream "mic-dashboards" in /etc/nginx/nginx.conf:66

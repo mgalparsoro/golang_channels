@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+if [ -z "$1" ]
+  then
+    echo "`date`: Producer says hello!!!" | /kafka/bin/kafka-console-producer.sh --topic test-topic --bootstrap-server localhost:9092 > /dev/null
+  else
+    echo $1 | /kafka/bin/kafka-console-producer.sh --topic test-topic --bootstrap-server localhost:9092 > /dev/null
+fi

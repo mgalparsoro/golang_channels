@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Check 3 arguments are provided
+if [ $# -ne 3 ]; then
+  echo "Usage: $0 <csrFile> <configFile> <certFile>"
+  exit 1
+fi
+
+# Check first argument is a file
+if [ ! -f $1 ]; then
+  echo "Error: $1 is not a file"
+  exit 1
+fi
+
+# Check second argument is a file
+if [ ! -f $2 ]; then
+  echo "Error: $2 is not a file"
+  exit 1
+fi
+
+# Prompt to get the location url of the CA service, default http://172.18.11.112:13000/sign
+read -p "Enter the location url of the CA service [http://172.18.11.112:13000/sign]: " caUrl
+if [ -z "$caUrl" ]; then
+    caUrl="http://172.18.11.112:13000/sign"
+fi
+
+curl -X POST -F csrFile=@$1 -F confFile=@$2 $caUrl -o $3
+
+# Check the certificate was created
+if [ $? -ne 0 ]; then
+  echo "Failed to create certificate"
+  exit 1
+fi
+
+echo "Certificate created successfully"

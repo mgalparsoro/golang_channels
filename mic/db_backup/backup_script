@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker exec -d mic-postgres pg_dump -U postgres -w -F d -f /db_backup/`date +%Y-%m-%d-%H%M%S` smartpm_cell
+
